@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&display=swap');
+
+/* Règles sur les balises */
+/* Un bord bleu en haut de page */
+body {
+  border-top: 10px solid rgb(43, 53, 80);
+  background-color: rgb(57, 79, 109);
+  font-family: 'Roboto', sans-serif;
+}
+form {
+  /* Uniquement centrer le formulaire sur la page */
+  margin: 0 auto;
+  width: 800px;
+  /* Encadré pour voir les limites du formulaire */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+/* un peu d'espacement */
+h1 {
+  color: white;
+  text-align: center;
+  margin: 30px auto;
+  /* équivalent
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-right: auto;
+        margin-left: auto;
+    */
+}
+/* un peu d'espacement */
+h2 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin: 1em auto;
+  /* équivalent
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-right: auto;
+        margin-left: auto;
+    */
+}
+/* Règles sur les classes */
+/* une couleur atténuée et une taille petite pour la classe small */
+.small {
+  color: white;
+  font-size: 0.8em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+/* un peu d'espacement et une ombre portée sur le formulaire */
+.form-group {
+  margin-top: 1em;
+  padding: 2em; /* marge intérieure */
+  background-color: #f6fbff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* permet de gére l'opacité */
+}
+
+/* du gras pour le libellé de la liste déroulante */
+.liste {
+  font-weight: bold;
+}
+
+/* un peu d'espacement */
+.custom-radio {
+  margin-bottom: 2em;
+}
+
+/* un peu d'espacement */
+.btn-primary {
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+/* taille de l'illustration */
+.form-img {
+  width: 8vw; /* vw : Viewport Width (taille de l'écran visible) --> 8% de l'écran */
+  min-width: 50px; /* l'image ne pourra pas être plus petite que 50 pixels */
+}
+#citation {
+  font-family: "Oswald", sans-serif;
+  color:white;
+  font-size: 25px;
+}
+#menu {
+  min-width: 800px;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background-color: rgb(91, 100, 153);
+}
+
+body#menu {
+  background-color: antiquewhite;
+}
+
+#menu ul {
+  list-style: none;
+  float: left;
+  left: 10%;
+  position: relative;
+  margin-left: -60px;
+  background-color: #e5e8e8;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+#menu ul li {
+  float: left;
+ 
+}
+#menu ul li a {
+    text-align: left;
+  padding: 10px 110px;
+  display: inline-block;
+  height: 20px;
+  width: 100px;
+  color: black;
+  text-decoration: none;
+}
+#menu ul li a:hover {
+  color: white;
+  background-color:rgb(48, 72, 100);
+}
+  /* Règles affichage média */
+  /* En affichage mobile : le bouton fait toute la largeur de la page
+  De 0 à 768 pixels : la règle s'applique */
+  @media all and (max-width:768px) {
+    .btn-expand {
+      width: 100%;
+      display: block;
+    }
+  }
